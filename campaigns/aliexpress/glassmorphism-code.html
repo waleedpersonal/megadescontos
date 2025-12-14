@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive AliExpress 70% OFF - Limited Time</title>
+    <meta name="description" content="Premium discount - 70% OFF on AliExpress. Exclusive offer for you.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #ff4747 0%, #ff6b35 50%, #ffd93d 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            top: -150px;
+            right: -150px;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        body::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            bottom: -200px;
+            left: -200px;
+            animation: float 25s ease-in-out infinite reverse;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(50px, 50px) rotate(180deg); }
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 55px 45px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .sparkle {
+            font-size: 40px;
+            margin-bottom: 20px;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.1); }
+        }
+        
+        .brand {
+            font-size: 32px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .discount {
+            font-size: 88px;
+            font-weight: 900;
+            color: white;
+            line-height: 1;
+            margin: 25px 0;
+            text-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 35px;
+            font-weight: 500;
+        }
+        
+        .code-glass {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .code-tag {
+            font-size: 12px;
+            color: rgba(255,255,255,0.8);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .code {
+            font-size: 42px;
+            font-weight: 900;
+            color: white;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 4px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            user-select: all;
+            cursor: pointer;
+        }
+        
+        .verified {
+            font-size: 13px;
+            color: #22c55e;
+            font-weight: 700;
+            margin-top: 12px;
+            text-shadow: 0 2px 10px rgba(34,197,94,0.5);
+        }
+        
+        .btn {
+            background: rgba(255, 255, 255, 0.95);
+            color: #ff4747;
+            border: none;
+            font-size: 20px;
+            font-weight: 800;
+            padding: 20px 50px;
+            border-radius: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            background: white;
+        }
+        
+        .btn:active {
+            transform: translateY(-1px);
+        }
+        
+        .btn.copied {
+            background: #22c55e;
+            color: white;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 35px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .feature {
+            text-align: center;
+            color: white;
+        }
+        
+        .feature-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        
+        .feature-text {
+            font-size: 12px;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 480px) {
+            .card { padding: 45px 30px; }
+            .discount { font-size: 72px; }
+            .code { font-size: 32px; letter-spacing: 2px; }
+            .btn { font-size: 18px; padding: 18px 40px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="sparkle">✨</div>
+        <div class="brand">AliExpress</div>
+        <div class="discount">70% OFF</div>
+        <div class="subtitle">Exclusive Premium Discount</div>
+        
+        <div class="code-glass">
+            <div class="code-tag">Your Code</div>
+            <div class="code" id="code" onclick="copy()">PREMIUM70</div>
+            <div class="verified">✓ Verified & Active</div>
+        </div>
+        
+        <button class="btn" id="btn" onclick="copy()">
+            Copy & Shop Now
+        </button>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-text">Instant<br>Activation</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎁</div>
+                <div class="feature-text">All<br>Products</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-text">Secure<br>& Safe</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const CONFIG = {
+            code: 'PREMIUM70',
+            url: 'https://www.aliexpress.com',
+            autoRedirect: true,
+            delay: 1500
+        };
+        
+        function copy() {
+            const btn = document.getElementById('btn');
+            
+            navigator.clipboard.writeText(CONFIG.code).then(() => {
+                btn.textContent = '✓ Copied!';
+                btn.classList.add('copied');
+                
+                if (CONFIG.autoRedirect) {
+                    setTimeout(() => {
+                        window.open(CONFIG.url, '_blank');
+                    }, CONFIG.delay);
+                }
+                
+                setTimeout(() => {
+                    btn.textContent = 'Copy & Shop Now';
+                    btn.classList.remove('copied');
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>70% OFF</title>
+    <meta name="description" content="Get 70% OFF. One code. One click.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: #fff;
+            color: #000;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            width: 100%;
+        }
+        
+        .line {
+            border-bottom: 5px solid #000;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 0.9;
+            margin-bottom: 20px;
+            letter-spacing: -4px;
+        }
+        
+        .brand {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .code-wrapper {
+            background: #000;
+            color: #fff;
+            padding: 50px 40px;
+            margin: 40px 0;
+            border: 5px solid #000;
+            position: relative;
+        }
+        
+        .code-wrapper::before,
+        .code-wrapper::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 5px solid #000;
+            border-radius: 50%;
+        }
+        
+        .code-wrapper::before {
+            top: -12px;
+            left: -12px;
+        }
+        
+        .code-wrapper::after {
+            bottom: -12px;
+            right: -12px;
+        }
+        
+        .code-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        
+        .code {
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            cursor: pointer;
+            user-select: all;
+            word-break: break-all;
+        }
+        
+        .btn {
+            background: #ff4747;
+            color: #fff;
+            border: 5px solid #000;
+            font-size: 24px;
+            font-weight: 900;
+            padding: 25px 50px;
+            cursor: pointer;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            transition: all 0.1s;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .btn:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 8px 8px 0 #000;
+        }
+        
+        .btn:active {
+            transform: translate(0, 0);
+            box-shadow: none;
+        }
+        
+        .btn.copied {
+            background: #22c55e;
+        }
+        
+        .info {
+            margin-top: 40px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .info-item {
+            padding: 15px 0;
+            border-bottom: 2px solid #000;
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .highlight {
+            background: #ff4747;
+            color: #fff;
+            padding: 2px 8px;
+            font-weight: 900;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 80px; }
+            .code { font-size: 48px; letter-spacing: 4px; }
+            .btn { font-size: 20px; padding: 20px 40px; }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 64px; }
+            .code { font-size: 36px; letter-spacing: 2px; }
+            .btn { font-size: 18px; padding: 18px 30px; }
+            .code-wrapper { padding: 35px 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line"></div>
+        
+        <div class="brand">BRAND NAME</div>
+        <h1>70%<br>OFF</h1>
+        
+        <div class="code-wrapper">
+            <div class="code-label">[ CODE ]</div>
+            <div class="code" id="code" onclick="copy()">SAVE70</div>
+        </div>
+        
+        <button class="btn" id="btn" onclick="copy()">
+            [ COPY CODE ]
+        </button>
+        
+        <div class="info">
+            <div class="info-item">
+                <span class="highlight">VERIFIED</span> TODAY
+            </div>
+            <div class="info-item">
+                WORKS ON <span class="highlight">ALL PRODUCTS</span>
+            </div>
+            <div class="info-item">
+                EXPIRES IN <span class="highlight">24 HOURS</span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const CONFIG = {
+            code: 'SAVE70',
+            url: 'https://www.example.com',
+            autoRedirect: true,
+            delay: 1000
+        };
+        
+        function copy() {
+            const btn = document.getElementById('btn');
+            
+            navigator.clipboard.writeText(CONFIG.code).then(() => {
+                btn.textContent = '[ ✓ COPIED ]';
+                btn.classList.add('copied');
+                
+                if (CONFIG.autoRedirect) {
+                    setTimeout(() => {
+                        window.location.href = CONFIG.url;
+                    }, CONFIG.delay);
+                }
+                
+                setTimeout(() => {
+                    btn.textContent = '[ COPY CODE ]';
+                    btn.classList.remove('copied');
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
