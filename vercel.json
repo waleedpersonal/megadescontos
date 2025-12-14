@@ -1,4 +1,8 @@
 {
+  "builds": [
+    { "src": "public/**", "use": "@vercel/static" },
+    { "src": "campaigns/**", "use": "@vercel/static" }
+  ],
   "routes": [
     { "src": "/", "dest": "/public/index.html" },
     { "src": "/sobre", "dest": "/public/sobre.html" },
