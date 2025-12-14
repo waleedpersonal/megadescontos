@@ -1,0 +1,43 @@
+{
+  "merchant": "AliExpress",
+  "market": "Portugal",
+  "live_variant": "variant-a",
+  "variants": {
+    "variant-a": {
+      "name": "Ultra Minimal Red",
+      "code": "PT70OFF",
+      "discount": "70%",
+      "affiliate_url": "https://www.aliexpress.com",
+      "auto_redirect": true,
+      "redirect_delay": 1200,
+      "timer_hours": 6,
+      "verified_text": "Verificado Hoje",
+      "urgent_text": "Expira em 6 horas",
+      "notes": "Clean red design, code front and center"
+    },
+    "variant-b": {
+      "name": "Modern Dark",
+      "code": "PT70OFF",
+      "discount": "70%",
+      "affiliate_url": "https://www.aliexpress.com",
+      "auto_redirect": true,
+      "redirect_delay": 1500,
+      "timer_hours": 3,
+      "verified_text": "Garantido",
+      "urgent_text": "Oferta expira em 3 horas",
+      "notes": "Dark gradient, premium feel, social proof"
+    },
+    "variant-c": {
+      "name": "Reveal/Unlock",
+      "code": "PT70DEAL",
+      "discount": "70%",
+      "affiliate_url": "https://www.aliexpress.com",
+      "auto_redirect": true,
+      "redirect_delay": 1500,
+      "timer_hours": 4,
+      "verified_text": "100% Verificado",
+      "urgent_text": "Código expira em 4 horas",
+      "notes": "Interactive reveal, creates engagement"
+    }
+  }
+}
