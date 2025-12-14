@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AliExpress Código de Desconto 70% - Funciona Hoje</title>
-    <meta name="description" content="Código de desconto AliExpress até 70% OFF. Verificado e funciona 100%. Copie agora.">
+    <title>AliExpress Desconto Até 70% OFF - Ative Agora</title>
+    <meta name="description" content="Desconto exclusivo AliExpress até 70% OFF. Sem código necessário. Clique para ativar.">
     <style>
         * {
             margin: 0;
@@ -14,7 +14,7 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #ff4747;
+            background: linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -22,190 +22,232 @@
             padding: 15px;
         }
         
-        .box {
+        .container {
             background: white;
-            border-radius: 16px;
-            padding: 40px 35px;
+            border-radius: 20px;
+            padding: 50px 40px;
             text-align: center;
-            max-width: 420px;
+            max-width: 450px;
             width: 100%;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 25px 70px rgba(0,0,0,0.5);
+            position: relative;
         }
         
-        .brand {
-            font-size: 28px;
+        .tag {
+            background: #ffd700;
+            color: #1a1a1a;
+            font-size: 11px;
+            font-weight: 900;
+            padding: 8px 18px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .logo {
+            font-size: 36px;
             font-weight: 900;
             color: #ff4747;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         
-        .off {
-            font-size: 64px;
+        .circle {
+            width: 160px;
+            height: 160px;
+            background: linear-gradient(135deg, #ff4747 0%, #ff6b6b 100%);
+            border-radius: 50%;
+            margin: 25px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 15px 40px rgba(255,71,71,0.4);
+        }
+        
+        .circle-text {
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .circle-number {
+            color: white;
+            font-size: 56px;
             font-weight: 900;
-            color: #1a1a1a;
             line-height: 1;
-            margin-bottom: 10px;
+            margin: 5px 0;
         }
         
-        .subtitle {
-            font-size: 16px;
+        .title {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin: 25px 0 15px;
+        }
+        
+        .desc {
+            font-size: 14px;
             color: #666;
             margin-bottom: 30px;
-            font-weight: 500;
+            line-height: 1.6;
         }
         
-        .code-box {
-            background: #fff5f5;
-            border: 3px dashed #ff4747;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 25px 0;
-        }
-        
-        .label {
-            font-size: 11px;
-            text-transform: uppercase;
-            color: #999;
-            letter-spacing: 1.5px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        
-        .code {
-            font-size: 32px;
-            font-weight: 900;
-            color: #ff4747;
-            font-family: 'Courier New', monospace;
-            letter-spacing: 3px;
-            margin: 10px 0;
-            user-select: all;
-            cursor: pointer;
-        }
-        
-        .verified {
-            font-size: 12px;
-            color: #22c55e;
-            font-weight: 700;
-            margin-top: 8px;
-        }
-        
-        .btn {
+        .cta {
             background: #ff4747;
             color: white;
             border: none;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 800;
-            padding: 18px 40px;
-            border-radius: 12px;
+            padding: 20px 50px;
+            border-radius: 14px;
             cursor: pointer;
             width: 100%;
-            margin: 15px 0 10px;
-            transition: all 0.2s;
+            transition: all 0.3s;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
         
-        .btn:hover {
+        .cta:hover {
             background: #e63939;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255,71,71,0.4);
         }
         
-        .btn:active {
+        .cta:active {
             transform: translateY(0);
         }
         
-        .btn.copied {
-            background: #22c55e;
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 20px 0;
+            border-top: 2px dashed #e5e5e5;
         }
         
-        .link {
-            display: inline-block;
-            color: #ff4747;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 700;
-            margin-top: 15px;
-            padding: 10px;
+        .benefit {
+            text-align: center;
         }
         
-        .timer {
+        .benefit-icon {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        
+        .benefit-text {
+            font-size: 11px;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .urgent {
+            background: #fff5f5;
+            border-radius: 10px;
+            padding: 12px 20px;
+            margin-top: 25px;
             font-size: 13px;
             color: #ff4747;
             font-weight: 700;
-            margin-top: 20px;
         }
         
-        .terms {
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 25px;
+        }
+        
+        .stat-num {
+            font-size: 22px;
+            font-weight: 900;
+            color: #ff4747;
+        }
+        
+        .stat-label {
             font-size: 11px;
             color: #999;
-            margin-top: 20px;
-            line-height: 1.5;
+            font-weight: 600;
+            margin-top: 3px;
         }
         
         @media (max-width: 480px) {
-            .box { padding: 35px 25px; }
-            .off { font-size: 52px; }
-            .code { font-size: 26px; letter-spacing: 2px; }
-            .btn { font-size: 16px; padding: 16px 35px; }
+            .container { padding: 40px 30px; }
+            .circle { width: 140px; height: 140px; }
+            .circle-number { font-size: 48px; }
+            .title { font-size: 20px; }
+            .cta { font-size: 17px; padding: 17px 40px; }
+            .benefits { flex-direction: column; gap: 15px; }
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <div class="brand">AliExpress</div>
-        <div class="off">70% OFF</div>
-        <div class="subtitle">Código Exclusivo Portugal</div>
+    <div class="container">
+        <div class="tag">🇵🇹 Exclusivo Portugal</div>
+        <div class="logo">AliExpress</div>
         
-        <div class="code-box">
-            <div class="label">Seu Código</div>
-            <div class="code" id="code" onclick="copy()">PT70OFF</div>
-            <div class="verified">✓ Verificado Hoje</div>
+        <div class="circle">
+            <div class="circle-text">Até</div>
+            <div class="circle-number">70%</div>
+            <div class="circle-text">OFF</div>
         </div>
         
-        <button class="btn" id="btn" onclick="copy()">
-            📋 Copiar & Comprar
-        </button>
+        <h1 class="title">Desconto Automático</h1>
+        <p class="desc">Sem código necessário. O desconto aplica-se automaticamente no checkout.</p>
         
-        <a href="https://www.aliexpress.com" class="link" target="_blank">
-            Ir para AliExpress →
-        </a>
+        <button class="cta" onclick="activate()">Ativar Desconto</button>
         
-        <div class="timer">⏰ Expira em 6 horas</div>
-        
-        <div class="terms">
-            Válido para novos e clientes existentes. Aplicável na maioria dos produtos.
+        <div class="benefits">
+            <div class="benefit">
+                <div class="benefit-icon">⚡</div>
+                <div class="benefit-text">Instantâneo</div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">✓</div>
+                <div class="benefit-text">Garantido</div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🚀</div>
+                <div class="benefit-text">Envio Grátis</div>
+            </div>
         </div>
+        
+        <div class="stats">
+            <div>
+                <div class="stat-num">2.3K</div>
+                <div class="stat-label">Usaram Hoje</div>
+            </div>
+            <div>
+                <div class="stat-num">99%</div>
+                <div class="stat-label">Taxa Sucesso</div>
+            </div>
+        </div>
+        
+        <div class="urgent">⏰ Oferta expira em 3 horas</div>
     </div>
     
     <script>
         const CONFIG = {
-            code: 'PT70OFF',
             url: 'https://www.aliexpress.com',
-            autoRedirect: true,
-            delay: 1200
+            track: true
         };
         
-        function copy() {
-            const btn = document.getElementById('btn');
+        function activate() {
+            const btn = document.querySelector('.cta');
+            btn.textContent = '✓ A Redirecionar...';
+            btn.style.background = '#22c55e';
             
-            navigator.clipboard.writeText(CONFIG.code).then(() => {
-                btn.textContent = '✓ Copiado!';
-                btn.classList.add('copied');
-                
-                if (CONFIG.autoRedirect) {
-                    setTimeout(() => {
-                        window.open(CONFIG.url, '_blank');
-                    }, CONFIG.delay);
-                }
-                
-                setTimeout(() => {
-                    btn.textContent = '📋 Copiar & Comprar';
-                    btn.classList.remove('copied');
-                }, 3000);
-            });
+            if (CONFIG.track) {
+                console.log('Conversão rastreada');
+            }
+            
+            setTimeout(() => {
+                window.location.href = CONFIG.url;
+            }, 700);
         }
-        
-        document.getElementById('code').addEventListener('click', copy);
     </script>
 </body>
 </html>
