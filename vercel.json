@@ -10,6 +10,7 @@
     { "src": "/termos", "dest": "/public/termos.html" },
     { "src": "/contacto", "dest": "/public/contacto.html" },
     { "src": "/aliexpress", "dest": "/campaigns/aliexpress/live.html" },
+    { "src": "/dhgate", "dest": "/campaigns/dhgate/live.html" },
     { "handle": "filesystem" }
   ],
   "headers": [

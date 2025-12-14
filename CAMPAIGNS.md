@@ -16,6 +16,16 @@
 - **Started:** 2025-12-14
 - **Notes:** Initial setup complete, ready for Google Ads approval
 
+### DHgate
+- **URL:** megadescontos.pt/dhgate
+- **Live Variant:** variant-a (Minimal Gold)
+- **Code:** DHGATE20
+- **Discount:** 20% OFF
+- **Status:** ✅ Ready to Launch
+- **Ad Spend:** €0/day (not yet launched)
+- **Started:** 2025-12-14
+- **Notes:** Variant-b (Modern Dark) available for A/B test
+
 ---
 
 ## 🟡 In Development

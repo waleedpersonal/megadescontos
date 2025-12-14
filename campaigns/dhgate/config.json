@@ -1,0 +1,28 @@
+{
+  "merchant": "DHgate",
+  "market": "Portugal",
+  "live_variant": "variant-a",
+  "variants": {
+    "variant-a": {
+      "name": "Minimal Gold",
+      "code": "DHGATE20",
+      "discount": "20%",
+      "affiliate_url": "https://www.dhgate.com",
+      "auto_redirect": true,
+      "redirect_delay": 1200,
+      "verified_text": "Verificado Hoje",
+      "urgent_text": "Expira em 6 horas"
+    },
+    "variant-b": {
+      "name": "Modern Dark",
+      "code": "DHGATE25",
+      "discount": "25%",
+      "affiliate_url": "https://www.dhgate.com",
+      "auto_redirect": true,
+      "redirect_delay": 1400,
+      "verified_text": "Garantido",
+      "urgent_text": "Oferta expira em 3 horas"
+    }
+  }
+}
+
