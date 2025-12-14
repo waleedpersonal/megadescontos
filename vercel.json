@@ -1,11 +1,16 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/public/index.html" },
-    { "source": "/sobre", "destination": "/public/sobre.html" },
-    { "source": "/privacidade", "destination": "/public/privacidade.html" },
-    { "source": "/termos", "destination": "/public/termos.html" },
-    { "source": "/contacto", "destination": "/public/contacto.html" },
-    { "source": "/aliexpress", "destination": "/campaigns/aliexpress/live.html" }
+  "builds": [
+    { "src": "public/**", "use": "@vercel/static" },
+    { "src": "campaigns/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/public/index.html" },
+    { "src": "/sobre", "dest": "/public/sobre.html" },
+    { "src": "/privacidade", "dest": "/public/privacidade.html" },
+    { "src": "/termos", "dest": "/public/termos.html" },
+    { "src": "/contacto", "dest": "/public/contacto.html" },
+    { "src": "/aliexpress", "dest": "/campaigns/aliexpress/live.html" },
+    { "handle": "filesystem" }
   ],
   "headers": [
     {
